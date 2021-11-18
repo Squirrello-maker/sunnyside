@@ -19,7 +19,44 @@ body
 {
     &__mobile
     {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 85px;
+        z-index: 100;
+        padding: 2em 0;
+        width: 90%;
+        background-color: #fff;
+        &::before
+        {
+            content: '';
+            position: fixed;
+            top: 60px;
+            right: 19px;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        }
+    }
+    &__link
+    {
+        margin: .8em 0;
+        font-family: 'Barlow', sans-serif;
+        color: $grayish-blue;
+        text-decoration: none;
 
+    }
+    &__link:last-child
+    {
+        padding: 1em 2em;
+        font-family: 'Fraunces', serif;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: #000;
+        background-color: $yellow; 
+        border-radius: 30px;
     }
     &__desktop
     {
