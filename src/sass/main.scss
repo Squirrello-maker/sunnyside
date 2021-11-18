@@ -26,6 +26,22 @@ body
         display: none;
     }
 }
+.logo
+{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.burger
+{
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    padding: 1em;
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+}
 .header
 {
     position: relative;
@@ -39,6 +55,8 @@ body
     background-position: center;
     &__heading
     {
+        position: absolute;
+        top: -5px;
         padding-top: 2em;
         color: #fff;
         font-size: 4rem;
@@ -139,6 +157,100 @@ body
             }
         }
     }
+}
+.testimonials
+{
+    padding: 2em 1em;
+    &__heading
+    {
+        margin: .5em;
+        font-size: 1.7rem;
+        color: $grayish-blue;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}
+.testimonial
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    &__img
+    {
+        margin-bottom: 2em;
+        align-self: center;
+        width: 85px;
+        border-radius: 50%;
+    }
+    &__text
+    {
+        padding-bottom: 1.8em;
+        font-family: 'Barlow', sans-serif; 
+        color: $gray-blue;
+        line-height: 28px;
+    }
+    &__name, &__title, &__text
+    {
+        text-align: center;
+    }
+    &__title
+    {
+        font-family: 'Barlow', sans-serif; 
+        color: $grayish-blue;
+    }
+}
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    &__img
+    {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+   background-color: $light-cyan; 
+   &__heading
+   {
+       margin-bottom: 1em;
+   }
+   &__links
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    .link
+    {
+        color: $dark-cyan2;
+        font-family: 'Barlow', sans-serif; 
+        text-decoration: none;
+    }
+   }
+   &__socials
+   {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4em;
+    padding-bottom: 1.5em;
+    .fab
+    {
+        font-size: 2.5rem;
+        margin: 0 .5em;
+        text-decoration: none;
+        color: $dark-cyan1;
+    }
+   }
 }
 .learn
 {
