@@ -20,17 +20,17 @@
       </button>
     <nav class="nav nav__desktop">
       <div class="nav__links">
-        <a href="#" class="nav__link">About</a>
-        <a href="#" class="nav__link">Services</a>
-        <a href="#" class="nav__link">Projects</a>
-        <a href="#" class="nav__link">Contact</a>
+        <a href="#" class="nav__desktop__link">About</a>
+        <a href="#" class="nav__desktop__link">Services</a>
+        <a href="#" class="nav__desktop__link">Projects</a>
+        <a href="#" class="nav__desktop__link">Contact</a>
       </div>
     </nav>
     <nav class="nav nav__mobile">
-      <a href="#" class="nav__link">About</a>
-      <a href="#" class="nav__link">Services</a>
-      <a href="#" class="nav__link">Projects</a>
-      <a href="#" class="nav__link">Contact</a>
+      <a href="#" class="nav__mobile__link">About</a>
+      <a href="#" class="nav__mobile__link">Services</a>
+      <a href="#" class="nav__mobile__link">Projects</a>
+      <a href="#" class="nav__mobile__link">Contact</a>
     </nav>
     <h1 class="heading header__heading">We are creatives</h1>
     <img src="./src/img/icon-arrow-down.svg" alt="" class="arrow">
@@ -39,19 +39,19 @@
     <section class="section section__about">
       <div class="card card__image card__image--first"></div>
 
-      <div class="card card__content">
+      <div class="card card__content card__content--first">
         <h2 class="heading">Transform your brand</h2>
         <p class="text">We are a full-service creative agency specializing in helping brands grow fast. 
           Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <a href="#" class="learn">  Learn more</a>
+        <div class="temp-div"><a href="#" class="learn">  Learn more</a></div>
       </div>
 
       <div class="card card__image card__image--second"></div>
 
-      <div class="card card__content">
+      <div class="card card__content card__content--second">
         <h2 class="heading">Stand out to the right audience</h2>
         <p class="text">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
-        <a href="#" class="learn learn--red">Learn more</a>
+        <div class="temp-div"><a href="#" class="learn learn--red">Learn more</a></div>
       </div>
       <div class="card card__full card__full--first">
         <h2 class="heading heading--design">  Graphic design</h2>
@@ -65,30 +65,32 @@
     </section>
     <section class="testimonials">
       <h3 class="heading testimonials__heading">Client testimonials</h3>
-      <div class="testimonial">
-        <img src="./src/img/image-emily.jpg" alt="Image of Emily - Marketing Director" class="testimonial__img">
-        <p class="testimonial__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-        <p class="testimonial__name">  Emily R.</p>
-        <p class="testimonial__title">  Marketing Director</p>
-      </div>
-      <div class="testimonial">
-        <img src="./src/img/image-thomas.jpg" alt="Image of Emily - Marketing Director" class="testimonial__img">
-        <p class="testimonial__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-        <p class="testimonial__name">Thomas S.</p>
-        <p class="testimonial__title">Chief Operating Officer</p>
-      </div>
-      <div class="testimonial">
-        <img src="./src/img/image-jennie.jpg" alt="Image of Emily - Marketing Director" class="testimonial__img">
-        <p class="testimonial__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-        <p class="testimonial__name">Jennie F.</p>
-        <p class="testimonial__title">Business Owner</p>
+      <div class="testimonials__flex">
+        <div class="testimonial">
+          <img src="./src/img/image-emily.jpg" alt="Image of Emily - Marketing Director" class="testimonial__img">
+          <p class="testimonial__text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="testimonial__name">  Emily R.</p>
+          <p class="testimonial__title">  Marketing Director</p>
+        </div>
+        <div class="testimonial">
+          <img src="./src/img/image-thomas.jpg" alt="Image of Emily - Marketing Director" class="testimonial__img">
+          <p class="testimonial__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <p class="testimonial__name">Thomas S.</p>
+          <p class="testimonial__title">Chief Operating Officer</p>
+        </div>
+        <div class="testimonial">
+          <img src="./src/img/image-jennie.jpg" alt="Image of Emily - Marketing Director" class="testimonial__img">
+          <p class="testimonial__text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p class="testimonial__name">Jennie F.</p>
+          <p class="testimonial__title">Business Owner</p>
+        </div>
       </div>
     </section>
     <section class="gallery">
-      <img src="./src/img/mobile/image-gallery-milkbottles.jpg" alt="" srcset="" class="gallery__img">
-      <img src="./src/img/mobile/image-gallery-orange.jpg" alt="" srcset="" class="gallery__img">
-      <img src="./src/img/mobile/image-gallery-cone.jpg" alt="" srcset="" class="gallery__img">
-      <img src="./src/img/mobile/image-gallery-sugar-cubes.jpg" alt="" srcset="" class="gallery__img">
+      <img src="./src/img/mobile/image-gallery-milkbottles.jpg" alt="" class="gallery__img">
+      <img src="./src/img/mobile/image-gallery-orange.jpg" alt="" class="gallery__img">
+      <img src="./src/img/mobile/image-gallery-cone.jpg" alt="" class="gallery__img">
+      <img src="./src/img/mobile/image-gallery-sugar-cubes.jpg" alt="" class="gallery__img">
     </section>
   </main>
   <footer class="footer">
