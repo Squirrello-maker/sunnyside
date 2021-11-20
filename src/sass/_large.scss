@@ -41,7 +41,8 @@
     background-image: url('../img/desktop/image-header.jpg');
     &__heading
     {
-        top: 20%;
+        top: 40%;
+        font-size: 6rem;
     }
     .logo
     {
@@ -77,6 +78,28 @@
             &--second
             {
                 background-image: url('../img/desktop/image-photography.jpg');
+            }
+        }
+    }
+    .gallery
+    {
+        &__img
+        {
+            &--first
+            {
+                @include galleryImage('../img/desktop/image-gallery-milkbottles.jpg');
+            }
+            &--second
+            {
+                @include galleryImage('../img/desktop/image-gallery-orange.jpg');
+            }
+            &--third
+            {
+                @include galleryImage('../img/desktop/image-gallery-cone.jpg');
+            }
+            &--fourth
+            {
+                @include galleryImage('../img/desktop/image-gallery-sugarcubes.jpg');
             }
         }
     }
@@ -186,6 +209,32 @@
             &__full
             {
                 height: 65vh;
+            }
+        }
+    }
+    .gallery
+    {
+        &__img
+        {
+            height: 35vh;
+        }
+    }
+}
+@media (min-width:1920px) {
+    .main
+    {
+        .card
+        {
+            &__full
+            {
+                height: 75vh;
+            }
+        }
+        .gallery
+        {
+            &__img
+            {
+                height: 50vh;
             }
         }
     }
